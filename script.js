@@ -2,7 +2,7 @@
 function generate(){
 
     // Defining password length and complexity.
-    var complexity = document.getElementById("slider").Value;
+    var complexity = document.getElementById("slider").value;
 
     // Password values.
     var values = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()_+";
@@ -29,14 +29,14 @@ document.getElementById("slider").oninput = function(){
         document.getElementById("length").innerHTML = "Length: " + document.getElementById("slider").value;
     }
     else{
-        document.getElementById("length").innherHTML = "Length: 1";
+        document.getElementById("length").innerHTML = "Length: 1";
     }
 }
 
 // Function Copy to Clipboard.
 function copyPassword(){
 
-    document.getElementById("display").querySelector();
+    document.getElementById("display").select();
     document.execCommand("copy");
     alert("Password has been copied to your clipboard!");
 }
