@@ -3,8 +3,13 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!--Css-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <met http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--Bootstrap css Link-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <!--My personal css link-->
     <link rel="stylesheet" href="style.css">
 
     <title>Password Generator!</title>
@@ -13,16 +18,28 @@
 
 <body>
 
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Password Generator!</a>
+    </nav>
+
     <div class="container">
-        <h2>Password Generator</h2>
-        <br>
-        <br>
-        <!--Where the user types their Keyword-->
-        <input type="text" id="keyword" size="50" placeholder="Keyword here">
-        <br>
-        <!--Button user presses to generate password-->
-        <button style="font-size: 100%; padding: 5px 10px 10px 10px" onclick="generate()">Generate Password</button>
-        <p>Your Password is:</p>
+
+        <div class="row">
+
+            <div class="col-lg-8 col-sm-12 mx-auto">
+            
+                <div clas="content">
+                    <h4>Password Generator</h4>
+                    <br>
+                    <input type="text" id="display">
+                    <br>
+                    <input type="range" min="0" max="50" name="slider" id="slider">
+                    <br>
+                    <button onclick="generate">Generate Password.</button>
+                    <button onclick="copyPassword">Copy to Clipboard.</button>
+                <div id="length"></div>
+            </div>
+        </div>
     </div>
 
 <!--Javascipt-->
