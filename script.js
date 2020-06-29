@@ -2,12 +2,12 @@
 function generate(){
 
     // Defining password length and complexity.
-    let complexity = document.getElementById("slider").Value;
+    var complexity = document.getElementById("slider").Value;
 
     // Password values.
-    let values = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()_+";
+    var values = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()_+";
 
-    let password = "";
+    var password = "";
     
     // Loop to choose password.
     for(var i = 0; i <= complexity; i++){
